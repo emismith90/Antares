@@ -1,1 +1,3 @@
-"# Antares.Essentials" 
+# Antares.Essentials
+
+Essentials for .NET Core application.
