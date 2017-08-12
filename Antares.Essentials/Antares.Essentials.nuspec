@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Antares.Essentials</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>emismith90</authors>
+    <owners>emismith90</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Essentials for .NET Core application.</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Memcache AppSetting CRUD EF EntityFrameworkCore GenericRepository PagedList</tags>
+  </metadata>
+</package>
