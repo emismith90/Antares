@@ -18,13 +18,13 @@ namespace Antares.Essentials.Data.Extensions
             configuration.Configure(modelBuilder.Entity<TEntity>());
         }
 
-        public static void AddConfiguration<TEntity>(this ModelBuilder modelBuilder, AuditableTypeConfiguration<TEntity> configuration)
+        public static void AddConfiguration<TEntity>(this ModelBuilder modelBuilder, IAuditableTypeConfiguration<TEntity> configuration)
            where TEntity : AuditableEntityBase
         {
             configuration.Configure(modelBuilder.Entity<TEntity>());
         }
 
-        public static void AddConfiguration<TEntity, TKey>(this ModelBuilder modelBuilder, AuditableTypeConfiguration<TEntity, TKey> configuration)
+        public static void AddConfiguration<TEntity, TKey>(this ModelBuilder modelBuilder, IAuditableTypeConfiguration<TEntity, TKey> configuration)
            where TEntity : AuditableEntityBase<TKey>
         {
             configuration.Configure(modelBuilder.Entity<TEntity>());
