@@ -26,6 +26,8 @@ namespace Antares.Essentials.Data.Repositories
 
         public virtual TEntity GetById(TEntityKey id)
         {
+            if (id == null) throw new ArgumentException("id");
+
             return DbSet.Find(id);
         }
 
@@ -36,21 +38,42 @@ namespace Antares.Essentials.Data.Repositories
 
         public virtual void Add(TEntity obj)
         {
+            if (obj == null) throw new ArgumentException("obj");
+
             DbSet.Add(obj);
+        }
+
+        public void AddOrUpdate(TEntity obj)
+        {
+            if (obj == null) throw new ArgumentException("obj");
+
+            var existing = GetById(obj.Id);
+            if(existing == null)
+            {
+                Add(obj);
+            }
+            else
+            {
+                Update(obj);
+            }
         }
 
         public virtual void Update(TEntity obj)
         {
+            if (obj == null) throw new ArgumentException("obj");
+
             DbSet.Update(obj);
         }
 
         public virtual void Remove(TEntityKey id)
         {
-            DbSet.Remove(DbSet.Find(id));
+            DbSet.Remove(GetById(id));
         }
 
         public virtual IQueryable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
         {
+            if (predicate == null) throw new ArgumentException("predicate");
+
             return GetAll().Where(predicate);
         }
 

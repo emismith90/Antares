@@ -18,6 +18,7 @@ namespace Antares.Essentials.Data.Repositories
         IQueryable<TEntity> GetAll();
 
         void Add(TEntity obj);
+        void AddOrUpdate(TEntity obj);
         void Update(TEntity obj);
         void Remove(TEntityKey id);
 
