@@ -7,7 +7,8 @@ namespace Antares.Essentials.Configuration
     {
         protected virtual string SectionName => this.GetType().Name.Replace("Options", string.Empty);
         protected readonly IConfiguration Scope;
-        protected readonly IConfigurationSection CurrentSection;
+
+        public readonly IConfigurationSection CurrentSection;
 
         public OptionsBase(IConfiguration scope)
         {
@@ -48,6 +49,11 @@ namespace Antares.Essentials.Configuration
             }
 
             return null;
+        }
+
+        public override string ToString()
+        {
+            return $"{GetType().Name} [SectionName={SectionName}]";
         }
     }
 }

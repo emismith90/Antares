@@ -5,7 +5,7 @@ using Antares.Essentials.Data.Entities;
 
 namespace Antares.Essentials.Data.Repositories
 {
-    public interface IGenericRepository<TEntity> : IDisposable
+    public interface IGenericRepository<TEntity> : IGenericRepository<TEntity, int>, IDisposable
         where TEntity : class, IEntity
     {
     }

@@ -8,11 +8,14 @@ namespace Antares.Essentials.Data.TypeBuilders
         where TEntity : AuditableEntityBase
     {
     }
-        public abstract class AuditableTypeConfiguration<TEntity, TEntityKey>
+
+    public abstract class AuditableTypeConfiguration<TEntity, TEntityKey> : EntityTypeConfiguration<TEntity, TEntityKey>
         where TEntity : AuditableEntityBase<TEntityKey>
     {
-        public virtual void Configure(EntityTypeBuilder<TEntity> builder)
+        public override void Configure(EntityTypeBuilder<TEntity> builder)
         {
+            base.Configure(builder);
+
             builder.Property(c => c.CreatedOn)
                .HasColumnType("datetime")
                .ValueGeneratedOnAdd();

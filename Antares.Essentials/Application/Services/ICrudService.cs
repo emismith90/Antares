@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Antares.Essentials.Application.Services
 {
-    public interface ICrudService<TModel>
+    public interface ICrudService<TModel> : ICrudService<TModel, int>
        where TModel : ModelBase
     {
     }

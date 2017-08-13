@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Antares.Essentials.Data.Entities
 {
-    public abstract class AuditableEntityBase : AuditableEntityBase<int>, IAuditableEntity
+    public abstract class AuditableEntityBase : AuditableEntityBase<int>, IAuditableEntity, IEntity
     {
     }
 
-    public abstract class AuditableEntityBase<T> : EntityBase<T>, IAuditableEntity
+    public abstract class AuditableEntityBase<T> : EntityBase<T>, IAuditableEntity, IEntity<T>
     {
         public string CreatedById { get; set; }
         public DateTime? CreatedOn { get; set; }
