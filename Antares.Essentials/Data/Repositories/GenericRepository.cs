@@ -6,7 +6,7 @@ using Antares.Essentials.Data.Entities;
 
 namespace Antares.Essentials.Data.Repositories
 {
-    public class GenericRepository<TEntity> : GenericRepository<TEntity, int>, IGenericRepository<TEntity, int>
+    public class GenericRepository<TEntity> : GenericRepository<TEntity, int>, IGenericRepository<TEntity>
         where TEntity : class, IEntity
     {
         public GenericRepository(DbContext context) : base(context) { }

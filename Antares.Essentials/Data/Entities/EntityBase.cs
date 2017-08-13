@@ -1,6 +1,6 @@
 ﻿namespace Antares.Essentials.Data.Entities
 {
-    public abstract class EntityBase : EntityBase<int>, IEntity<int>
+    public abstract class EntityBase : EntityBase<int>, IEntity
     {
     }
 
