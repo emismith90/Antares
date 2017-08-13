@@ -46,9 +46,7 @@ namespace Antares.Essentials.Data.Repositories
         public void AddOrUpdate(TEntity obj)
         {
             if (obj == null) throw new ArgumentException("obj");
-
-            var existing = GetById(obj.Id);
-            if(existing == null)
+            if(!DbSet.Any(e => e.Id.Equals(obj.Id)))
             {
                 Add(obj);
             }
