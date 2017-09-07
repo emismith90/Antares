@@ -4,12 +4,12 @@ using Antares.Essentials.Data.Entities;
 
 namespace Antares.Essentials.Data.TypeBuilders
 {
-    public abstract class AuditableTypeConfiguration<TEntity> : AuditableTypeConfiguration<TEntity, int>
+    public abstract class AuditableTypeConfiguration<TEntity> : AuditableTypeConfiguration<TEntity, int>, IAuditableTypeConfiguration<TEntity>
         where TEntity : AuditableEntityBase
     {
     }
 
-    public abstract class AuditableTypeConfiguration<TEntity, TEntityKey> : EntityTypeConfiguration<TEntity, TEntityKey>
+    public abstract class AuditableTypeConfiguration<TEntity, TEntityKey> : EntityTypeConfiguration<TEntity, TEntityKey>, IAuditableTypeConfiguration<TEntity, TEntityKey>
         where TEntity : AuditableEntityBase<TEntityKey>
     {
         public override void Configure(EntityTypeBuilder<TEntity> builder)

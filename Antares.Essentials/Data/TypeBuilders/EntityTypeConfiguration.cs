@@ -3,12 +3,12 @@ using Antares.Essentials.Data.Entities;
 
 namespace Antares.Essentials.Data.TypeBuilders
 {
-    public abstract class EntityTypeConfiguration<TEntity> : EntityTypeConfiguration<TEntity, int>
+    public abstract class EntityTypeConfiguration<TEntity> : EntityTypeConfiguration<TEntity, int>, IEntityTypeConfiguration<TEntity>
         where TEntity : EntityBase
     {
     }
 
-    public abstract class EntityTypeConfiguration<TEntity, TEntityKey>
+    public abstract class EntityTypeConfiguration<TEntity, TEntityKey> : IEntityTypeConfiguration<TEntity, TEntityKey>
         where TEntity : EntityBase<TEntityKey>
     {
         public virtual void Configure(EntityTypeBuilder<TEntity> builder)
