@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <Authors>emismith90</Authors>
+    <Company>Antares</Company>
+    <Description>Simple caching for .NET appication</Description>
+    <Copyright>Copyright 2017 © Antares</Copyright>
+    <PackageProjectUrl>https://github.com/emismith90/Antares</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/emismith90/Antares.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Caching MemoryCaching</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Antares.Essentials.Configuration" Version="1.0.0" />
+    <PackageReference Include="Antares.Essentials.Utilities" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="1.1.2" />
+  </ItemGroup>
+
+</Project>

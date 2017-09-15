@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <Authors>emismith90</Authors>
+    <Company>Antares</Company>
+    <Description>Design patterns</Description>
+    <Copyright>Copyright 2017 © Antares</Copyright>
+    <PackageProjectUrl>https://github.com/emismith90/Antares</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/emismith90/Antares.git</RepositoryUrl>
+    <PackageTags>DesignPatterns</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Product />
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Antares.DesignPatterns.DataFlow" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

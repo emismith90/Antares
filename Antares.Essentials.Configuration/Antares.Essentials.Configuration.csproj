@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <Authors>emismith90</Authors>
+    <Company>Antares</Company>
+    <Description>.NET Core configuration reader</Description>
+    <Copyright>Copyright 2017 © Antares</Copyright>
+    <PackageProjectUrl>https://github.com/emismith90/Antares</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/emismith90/Antares.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Configuration AppSetting</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.2" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <Authors>emismith90</Authors>
+    <Company>Antares</Company>
+    <Description>Object stringifiers</Description>
+    <Copyright>Copyright 2017 © Antares</Copyright>
+    <PackageProjectUrl>https://github.com/emismith90/Antares</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/emismith90/Antares.git</RepositoryUrl>
+    <PackageTags>Object-stringifiers</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Antares.Stringifiers.Json" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Antares.Stringifiers.Json\Antares.Stringifiers.Json.csproj" />
+  </ItemGroup>
+
+</Project>

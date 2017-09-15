@@ -2,19 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <Version>1.0.8</Version>
-    <AssemblyVersion>1.0.8.0</AssemblyVersion>
-    <FileVersion>1.0.8.0</FileVersion>
+    <Version>1.1.1</Version>
+    <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <FileVersion>1.1.1.0</FileVersion>
     <Authors>emismith90</Authors>
     <Company>Antares</Company>
     <Description>Essentials for .NET Core application.</Description>
-    <RepositoryUrl>https://github.com/emismith90/Antares.Essentials.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/emismith90/Antares.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl>https://github.com/emismith90/Antares.Essentials</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/emismith90/Antares</PackageProjectUrl>
     <PackageTags>Memcache AppSetting CRUD EF EntityFrameworkCore GenericRepository PagedList</PackageTags>
-    <Copyright>Copyright 2017</Copyright>
+    <Copyright>Copyright 2017 © Antares</Copyright>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageReleaseNotes>Stable version</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Product>Antares.Essentials</Product>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -22,10 +23,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.2" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="1.1.2" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="1.1.2" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.2" />
+    <PackageReference Include="Antares.Essentials.Application" Version="1.0.0" />
+    <PackageReference Include="Antares.Essentials.Caching" Version="1.0.0" />
+    <PackageReference Include="Antares.Essentials.Configuration" Version="1.0.0" />
+    <PackageReference Include="Antares.Essentials.Data" Version="1.0.1" />
+    <PackageReference Include="Antares.Essentials.Utilities" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
