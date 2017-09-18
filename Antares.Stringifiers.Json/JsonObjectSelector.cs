@@ -34,6 +34,8 @@ namespace Antares.Stringifiers.Json
                 for (var i = 0; i < segments.Length; i++)
                 {
                     token = token.SelectToken(segments[i]);
+                    if (token == null) break;
+
                     var jArray = token as JArray;
                     if (jArray != null)
                     {
