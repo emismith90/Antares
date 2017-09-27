@@ -2,9 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <Version>1.1.1</Version>
-    <AssemblyVersion>1.1.1.0</AssemblyVersion>
-    <FileVersion>1.1.1.0</FileVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.1.2</Version>
+    <AssemblyVersion>1.1.2.0</AssemblyVersion>
+    <FileVersion>1.1.2.0</FileVersion>
     <Authors>emismith90</Authors>
     <Company>Antares</Company>
     <Description>Essentials for .NET Core application.</Description>
@@ -18,16 +19,12 @@
     <Product>Antares.Essentials</Product>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <WarningLevel>3</WarningLevel>
-  </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Antares.Essentials.Application" Version="1.0.0" />
-    <PackageReference Include="Antares.Essentials.Caching" Version="1.0.0" />
-    <PackageReference Include="Antares.Essentials.Configuration" Version="1.0.0" />
-    <PackageReference Include="Antares.Essentials.Data" Version="1.0.1" />
-    <PackageReference Include="Antares.Essentials.Utilities" Version="1.0.0" />
+    <ProjectReference Include="..\Antares.Essentials.Application\Antares.Essentials.Application.csproj" />
+    <ProjectReference Include="..\Antares.Essentials.Caching\Antares.Essentials.Caching.csproj" />
+    <ProjectReference Include="..\Antares.Essentials.Configuration\Antares.Essentials.Configuration.csproj" />
+    <ProjectReference Include="..\Antares.Essentials.Data\Antares.Essentials.Data.csproj" />
+    <ProjectReference Include="..\Antares.Essentials.Utilities\Antares.Essentials.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

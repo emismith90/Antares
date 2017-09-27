@@ -10,14 +10,10 @@
     <RepositoryUrl>https://github.com/emismith90/Antares.git</RepositoryUrl>
     <PackageTags>Object-stringifiers</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
-    <FileVersion>1.0.0.1</FileVersion>
+    <Version>1.0.3</Version>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Antares.Stringifiers.Json" Version="1.0.1" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Antares.Stringifiers.Json\Antares.Stringifiers.Json.csproj" />

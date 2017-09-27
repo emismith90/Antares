@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Antares.Essentials", "Antares.Essentials\Antares.Essentials.csproj", "{A8479162-BAEA-448D-ABB5-3BB8BE960A31}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Antares.Stringifiers.Json", "Antares.Stringifiers.Json\Antares.Stringifiers.Json.csproj", "{94CD80CA-4C70-45FA-A91B-0931A68D736B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antares.Stringifiers", "Antares.Stringifiers\Antares.Stringifiers.csproj", "{82273FCA-E705-41AA-BDA1-BEFC6046EF08}"
@@ -35,16 +33,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antares.Essentials.Applicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antares.Essentials.Utilities", "Antares.Essentials.Utilities\Antares.Essentials.Utilities.csproj", "{D7749083-36AA-4E88-9428-96BFFB2485AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antares.Essentials", "Antares.Essentials\Antares.Essentials.csproj", "{FE946BDD-919F-4083-B170-E1028C2E36C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A8479162-BAEA-448D-ABB5-3BB8BE960A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8479162-BAEA-448D-ABB5-3BB8BE960A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8479162-BAEA-448D-ABB5-3BB8BE960A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8479162-BAEA-448D-ABB5-3BB8BE960A31}.Release|Any CPU.Build.0 = Release|Any CPU
 		{94CD80CA-4C70-45FA-A91B-0931A68D736B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{94CD80CA-4C70-45FA-A91B-0931A68D736B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94CD80CA-4C70-45FA-A91B-0931A68D736B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -89,12 +85,15 @@ Global
 		{D7749083-36AA-4E88-9428-96BFFB2485AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7749083-36AA-4E88-9428-96BFFB2485AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7749083-36AA-4E88-9428-96BFFB2485AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE946BDD-919F-4083-B170-E1028C2E36C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE946BDD-919F-4083-B170-E1028C2E36C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE946BDD-919F-4083-B170-E1028C2E36C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE946BDD-919F-4083-B170-E1028C2E36C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A8479162-BAEA-448D-ABB5-3BB8BE960A31} = {86AF41C6-2B05-475D-9CBF-415552F2C653}
 		{94CD80CA-4C70-45FA-A91B-0931A68D736B} = {757C8836-E51E-432B-894B-5F62765543FB}
 		{82273FCA-E705-41AA-BDA1-BEFC6046EF08} = {757C8836-E51E-432B-894B-5F62765543FB}
 		{534C8F3F-4767-4B43-AA9D-172A8596D0EB} = {3C4AD7D5-C61D-4D13-846E-2AC4F3D34F8C}
@@ -105,5 +104,6 @@ Global
 		{A47C3C09-A25F-4E29-AA86-E96E4450BF36} = {86AF41C6-2B05-475D-9CBF-415552F2C653}
 		{49EAB5D8-0A35-4048-973B-0533F0596959} = {86AF41C6-2B05-475D-9CBF-415552F2C653}
 		{D7749083-36AA-4E88-9428-96BFFB2485AB} = {86AF41C6-2B05-475D-9CBF-415552F2C653}
+		{FE946BDD-919F-4083-B170-E1028C2E36C5} = {86AF41C6-2B05-475D-9CBF-415552F2C653}
 	EndGlobalSection
 EndGlobal
